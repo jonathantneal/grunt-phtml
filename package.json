@@ -1,0 +1,55 @@
+{
+  "name": "grunt-phtml",
+  "version": "1.0.0",
+  "description": "Use pHTML with Grunt",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "phtmlorg/grunt-phtml",
+  "homepage": "https://github.com/phtmlorg/grunt-phtml#readme",
+  "bugs": "https://github.com/phtmlorg/grunt-phtml/issues",
+  "files": [
+    "tasks"
+  ],
+  "scripts": {
+    "test": "npm run test:js && npm run test:tape",
+    "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet",
+    "test:tape": "grunt test"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "phtml": "^3.3.1"
+  },
+  "devDependencies": {
+    "@phtml/self-closing": "^3.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "pre-commit": "^1.2.2",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt": "~1.0.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "impliedStrict": true,
+      "sourceType": "module"
+    },
+    "extends": "eslint:recommended"
+  },
+  "keywords": [
+    "phtml",
+    "html",
+    "grunt",
+    "gruntplugin"
+  ]
+}
