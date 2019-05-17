@@ -1,6 +1,6 @@
 {
   "name": "grunt-phtml",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Use pHTML with Grunt",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -19,10 +19,10 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "phtml": "^3.3.1"
+    "phtml": "^4.1.0"
   },
   "devDependencies": {
-    "@phtml/self-closing": "^3.0.0",
+    "@phtml/self-closing": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "pre-commit": "^1.2.2",
@@ -32,19 +32,19 @@
     "grunt": "~1.0.4"
   },
   "eslintConfig": {
-    "root": true,
     "env": {
       "browser": true,
       "es6": true,
       "node": true
     },
+    "extends": "eslint:recommended",
     "parser": "babel-eslint",
     "parserOptions": {
       "ecmaVersion": 2018,
       "impliedStrict": true,
       "sourceType": "module"
     },
-    "extends": "eslint:recommended"
+    "root": true
   },
   "keywords": [
     "phtml",
